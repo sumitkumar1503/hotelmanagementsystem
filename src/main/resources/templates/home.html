@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+    .bg-dark {
+      background-color: #324854!important;
+  }
+    .navbar-brand {
+      font-size: 20px;
+      font-family: sans-serif;
+
+    }
+     .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('[[@{/images/bg4.jpg}]]');
+      background-size: auto 100%;
+      background-position: center center;
+<!--      background-repeat: repeat;-->
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+}
+footer {
+      padding: 0px 0px 0px 0px;
+      background-color: #324854;
+      margin: 0px;
+      position:static;
+      bottom:0;
+    }
+
+    p {
+      text-align: center;
+
+    }
+  </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+</head>
+
+<body>
+
+
+
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a href="/" class="navbar-brand" style="color:#dbdec5;">Hotel Management System</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active">Home</a>
+
+                <a href="/rooms" class="nav-item nav-link">Rooms</a>
+                <a href="/login" class="nav-item nav-link">Login</a>
+
+
+
+            </div>
+
+            <div class="navbar-nav">
+                <a href="/aboutus" class="nav-item nav-link">About Us</a>
+
+            </div>
+
+
+
+
+        </div>
+    </nav>
+</div>
+<!--NAVBAR END-->
+
+
+<br><br>
+
+<div layout:fragment="content">
+<!--    <p>Changing contents</p>-->
+
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<br><br>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+    <h2 class="w3-wide">POWER GYM</h2>
+    <p class="w3-opacity"><i>We love muscle ~ LazyCoder</i></p>
+    <p class="w3-justify">
+        Every single time you step into the gym. There’s no other way to get those gains. The pain and struggle is what you need to push through in order to make progress.
+
+        Every single time you stop before you’re through the pain, you’re letting yourself down.
+
+        Go to the gym. Go beast mode and push through the pain.. And you’ll be well on your way to become a stronger you!</p>
+</section>
+</br>
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+    <article class="w3-third">
+
+        <img th:src="@{/assets/member.svg}" alt="Random Name" style="width:100%">
+
+    </article>
+    <article class="w3-third">
+
+        <img th:src="@{/assets/barbell.svg}" alt="Random Name" style="width:100%">
+
+    </article>
+    <article class="w3-third">
+
+        <img th:src="@{/assets/trainer.svg}" alt="Random Name" style="width:100%">
+
+    </article>
+
+</section>
+</div>
+
+</body>
+
+</html>
